@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e9f5ea"/>
-      <stop offset="1" stop-color="#c3e6c6"/>
+      <stop offset="0" stop-color="#fff3e6"/>
+      <stop offset="1" stop-color="#ffd9ad"/>
     </linearGradient>
   </defs>
   <rect width="260" height="260" fill="url(#bg)"/>
-  <circle cx="130" cy="100" r="46" fill="#2e7d32" opacity="0.55"/>
-  <path d="M 40 235 Q 40 160 130 160 Q 220 160 220 235 Z" fill="#2e7d32" opacity="0.55"/>
-  <text x="130" y="245" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1b5e20">Your photo here</text>
+  <circle cx="130" cy="100" r="46" fill="#e77500" opacity="0.55"/>
+  <path d="M 40 235 Q 40 160 130 160 Q 220 160 220 235 Z" fill="#e77500" opacity="0.55"/>
+  <text x="130" y="245" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#b85d00">Your photo here</text>
 </svg>
