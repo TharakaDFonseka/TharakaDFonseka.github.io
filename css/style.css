@@ -4,9 +4,9 @@
    ========================================================================== */
 
 :root {
-  --accent: #e77500;          /* Princeton orange */
-  --accent-dark: #b85d00;
-  --accent-soft: #fff3e6;
+  --accent: #2e7d32;          /* deep green */
+  --accent-dark: #1b5e20;
+  --accent-soft: #e9f5ea;
   --ink: #1f2430;
   --ink-soft: #4b5263;
   --ink-faint: #8890a0;
@@ -44,50 +44,63 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
 a { color: var(--accent-dark); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ---------- Navigation ---------- */
+/* ---------- Navigation (fixed left sidebar on desktop) ---------- */
 
 .site-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  bottom: 0;
+  width: 230px;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+  background: #fff;
+  border-right: 1px solid var(--line);
+  overflow-y: auto;
 }
 
 .nav-inner {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 14px 24px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 32px 20px;
 }
 
 .nav-name {
   font-family: var(--font-head);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  line-height: 1.35;
   color: var(--ink);
+  padding-left: 12px;
 }
 .nav-name:hover { text-decoration: none; color: var(--accent-dark); }
 
-.nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
 
 .nav-links a {
   color: var(--ink-soft);
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   font-weight: 500;
-  padding: 2px 0;
-  border-bottom: 2px solid transparent;
+  padding: 8px 12px;
+  border-left: 3px solid transparent;
+  border-radius: 0 8px 8px 0;
 }
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--accent-dark);
   text-decoration: none;
-  border-bottom-color: var(--accent);
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
 }
+
+main,
+.site-footer { margin-left: 230px; }
 
 .nav-toggle {
   display: none;
@@ -429,6 +442,26 @@ a:hover { text-decoration: underline; }
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
   .news-list li { grid-template-columns: 84px 1fr; gap: 12px; }
 
+  /* Sidebar collapses back into a sticky top bar with a hamburger menu */
+  .site-nav {
+    position: sticky;
+    left: auto;
+    bottom: auto;
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    overflow-y: visible;
+  }
+  .nav-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 24px;
+  }
+  .nav-name { padding-left: 0; font-size: 1.05rem; }
+  main, .site-footer { margin-left: 0; }
+
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -444,5 +477,11 @@ a:hover { text-decoration: underline; }
     box-shadow: var(--shadow);
   }
   .nav-links.open { display: flex; }
-  .nav-links a { padding: 10px 0; border-bottom: none; }
+  .nav-links a {
+    padding: 10px 0;
+    border-left: none;
+    border-radius: 0;
+  }
+  .nav-links a:hover,
+  .nav-links a.active { background: none; }
 }

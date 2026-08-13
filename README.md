@@ -50,6 +50,6 @@ python3 -m http.server 8000
 ## Customizing
 
 - **Accent color**: edit `--accent` (and `--accent-dark`, `--accent-soft`) at the top of
-  `css/style.css`. Currently Princeton orange (`#e77500`).
+  `css/style.css`. Currently deep green (`#2e7d32`).
 - **Adding news items**: copy any `<li>` inside the `news-list` in `index.html`.
 - **Adding publications**: copy an `<li>` inside the relevant `pub-list`.
