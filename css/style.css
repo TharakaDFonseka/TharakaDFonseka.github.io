@@ -122,15 +122,6 @@ a:hover { text-decoration: underline; }
   align-items: center;
 }
 
-.hero-kicker {
-  color: var(--accent-dark);
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 10px;
-}
-
 .hero h1 { font-size: 2.6rem; margin-bottom: 4px; }
 
 .hero-sub {
@@ -160,7 +151,9 @@ a:hover { text-decoration: underline; }
 /* ---------- Buttons ---------- */
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 9px 18px;
   border-radius: 999px;
   border: 1.5px solid var(--line);
@@ -185,6 +178,16 @@ a:hover { text-decoration: underline; }
 .btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
 
 .btn-lg { padding: 13px 28px; font-size: 1.02rem; }
+
+/* Inline SVG icons in buttons and links */
+.icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+.btn-lg .icon { width: 1.1em; height: 1.1em; }
 
 /* ---------- Sections ---------- */
 
@@ -389,6 +392,11 @@ a:hover { text-decoration: underline; }
   gap: 26px;
   flex-wrap: wrap;
   font-weight: 500;
+}
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
 }
 
 /* ---------- Footer ---------- */
