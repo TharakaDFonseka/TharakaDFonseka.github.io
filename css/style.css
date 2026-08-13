@@ -4,9 +4,9 @@
    ========================================================================== */
 
 :root {
-  --accent: #e77500;          /* Princeton orange */
-  --accent-dark: #b85d00;
-  --accent-soft: #fff3e6;
+  --accent: #1565c0;          /* deep blue */
+  --accent-dark: #0d47a1;
+  --accent-soft: #e8f1fb;
   --ink: #1f2430;
   --ink-soft: #4b5263;
   --ink-faint: #8890a0;
@@ -250,6 +250,7 @@ main,
 }
 
 .news-list a { text-decoration: underline; }
+.news-list a.no-underline { text-decoration: none; }
 
 /* ---------- Cards ---------- */
 

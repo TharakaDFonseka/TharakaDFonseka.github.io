@@ -15,13 +15,9 @@ tharaka-website/
 
 ## Before publishing — TODO checklist
 
-1. **Photo**: add your photo as `assets/profile.jpg` and change the `<img src=...>`
-   in the hero section of `index.html` from `assets/profile-placeholder.svg` to `assets/profile.jpg`.
+1. **Photo**: done — `assets/1771378105769.jpeg` is used in the hero section.
 2. **CV**: add your CV PDF as `assets/cv.pdf` (two links point to it: hero and contact).
-3. **Google Scholar / GitHub links**: search `index.html` for `href="#"` (marked with
-   `TODO` comments) and replace with your real profile URLs. There are two of each
-   (one in the hero, one in the contact section).
-4. Review the content (dates, wording) — everything was compiled from your Canva site,
+3. Review the content (dates, wording) — everything was compiled from your Canva site,
    LinkedIn, and public paper listings.
 
 ## Deploying to GitHub Pages
@@ -50,6 +46,6 @@ python3 -m http.server 8000
 ## Customizing
 
 - **Accent color**: edit `--accent` (and `--accent-dark`, `--accent-soft`) at the top of
-  `css/style.css`. Currently Princeton orange (`#e77500`).
+  `css/style.css`. Currently deep blue (`#1565c0`).
 - **Adding news items**: copy any `<li>` inside the `news-list` in `index.html`.
 - **Adding publications**: copy an `<li>` inside the relevant `pub-list`.
