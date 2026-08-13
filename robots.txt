@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tharakadfonseka.github.io/sitemap.xml
