@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tharaka D. Fonseka</title>
+  <meta name="description" content="Tharaka D. Fonseka — PhD student in Electrical and Computer Engineering at Princeton University. Research in machine learning, signal processing, and AI for health and education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-nav" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="nav-name">Tharaka&nbsp;D.&nbsp;Fonseka</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / ABOUT ============ -->
+    <section class="hero" id="about">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker">PhD Student &middot; Electrical &amp; Computer Engineering</p>
+          <h1>Tharaka Dilshan Fonseka</h1>
+          <p class="hero-sub">Princeton University</p>
+          <p class="hero-bio">
+            I am a first-year PhD student in the Department of Electrical and Computer Engineering at
+            <strong>Princeton University</strong> (Fall 2025 cohort), where I am a member of the
+            <strong>JHA Lab</strong> led by Prof. Niraj K. Jha.
+          </p>
+          <p class="hero-bio">
+            Before Princeton, I earned my BSc in Electrical and Electronic Engineering from the
+            <strong>University of Peradeniya</strong>, Sri Lanka, graduating with First Class Honors,
+            a perfect <strong>GPA of 4.0/4.0</strong>, and ranked first in my batch. I then worked as a
+            Research Assistant at the Multidisciplinary AI Research Centre (MARC), University of Peradeniya.
+          </p>
+          <p class="hero-bio">
+            My research interests span <strong>machine learning</strong>, <strong>signal processing</strong>,
+            and <strong>AI applications in health and education</strong>. I am always happy to chat about
+            research ideas — feel free to reach out!
+          </p>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="mailto:tharaka@princeton.edu">tharaka@princeton.edu</a>
+            <!-- TODO: replace # with your real profile URLs -->
+            <a class="btn" href="#" title="Google Scholar">Google Scholar</a>
+            <a class="btn" href="https://www.linkedin.com/in/tharaka-d-fonseka-400918213" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="#" title="GitHub">GitHub</a>
+            <a class="btn" href="assets/cv.pdf" title="Curriculum Vitae">CV</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace assets/profile.jpg with your photo (keep the same filename or update the src) -->
+          <img src="assets/profile-placeholder.svg" alt="Tharaka D. Fonseka" id="profilePhoto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section class="section" id="news">
+      <div class="container">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">Jan 2026</span>
+            <span>Joined the <strong>JHA Lab</strong> at Princeton University, advised by Prof. Niraj K. Jha.</span>
+          </li>
+          <li>
+            <span class="news-date">Sep 2025</span>
+            <span>Moved to New Jersey, USA and started my <strong>PhD in Electrical and Computer Engineering</strong> at <strong>Princeton University</strong>!</span>
+          </li>
+          <li>
+            <span class="news-date">Aug 2025</span>
+            <span>Wrapped up my time as a Research Assistant at the Multidisciplinary AI Research Centre (MARC), University of Peradeniya.</span>
+          </li>
+          <li>
+            <span class="news-date">Feb 2025</span>
+            <span>Our paper <em>Performance Benchmarking of Psychomotor Skills Using Wearable Devices</em> was published in <strong>IEEE Access</strong>.</span>
+          </li>
+          <li>
+            <span class="news-date">Jan 2025</span>
+            <span>Released the <em>Devising PoPStat</em> preprint on arXiv, and our joint-angle estimation paper was presented at <strong>IEEE APSCON 2025</strong> in Hyderabad, India.</span>
+          </li>
+          <li>
+            <span class="news-date">Dec 2024</span>
+            <span>Our study on social interactions and psychological distress during COVID-19 was published in <strong>Frontiers in Psychology</strong>.</span>
+          </li>
+          <li>
+            <span class="news-date">Aug 2024</span>
+            <span>Won the <strong>Best Paper Award</strong> at MERCon 2024 for our work on welding quality assessment from biomechanical data.</span>
+          </li>
+          <li>
+            <span class="news-date">2024</span>
+            <span>Graduated as <strong>batch topper</strong> from the Faculty of Engineering, University of Peradeniya, receiving four awards at the 85th General Convocation.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2>Research</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>PoPStat: Linking Population Pyramids to Disease Mortality</h3>
+            <p>
+              Devised <em>PoPDivergence</em> and <em>PoPStat</em>, two metrics that condense a country's full
+              population pyramid into scalar values and quantify their association with cause-specific mortality
+              across 371 diseases and 200+ countries — outperforming traditional indicators such as median age,
+              GDP per capita, and HDI. The framework was later extended to quantify demographic vulnerability to COVID-19.
+            </p>
+            <p class="card-links">
+              <a href="https://arxiv.org/abs/2501.11514" target="_blank" rel="noopener">Devising PoPStat (arXiv)</a> ·
+              <a href="https://arxiv.org/abs/2509.14213" target="_blank" rel="noopener">PoPStat–COVID19 (arXiv)</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Benchmarking Psychomotor Skills with Wearable Devices</h3>
+            <p>
+              A framework for optimizing psychomotor learning through human motion analysis. IMU motion
+              trajectories are mapped to a performance space via task-specific quality metrics, enabling the
+              identification of benchmark clusters and targeted remedial actions — validated on a table tennis
+              forehand stroke case study.
+            </p>
+            <p class="card-links">
+              <a href="https://doi.org/10.1109/ACCESS.2025.3536837" target="_blank" rel="noopener">IEEE Access 2025</a> ·
+              <a href="https://arxiv.org/abs/2411.16168" target="_blank" rel="noopener">arXiv</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Social Interactions &amp; Mental Well-being During COVID-19</h3>
+            <p>
+              Analyzed a survey of 3,020 households across Sri Lanka using factor analysis and unsupervised
+              clustering, identifying distinct psychological groups and how interpersonal relationships mitigated
+              psychological distress — with actionable insights for mental-health policy in future crises.
+            </p>
+            <p class="card-links">
+              <a href="https://doi.org/10.3389/fpsyg.2024.1491805" target="_blank" rel="noopener">Frontiers in Psychology 2024</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Welding Quality Assessment from Biomechanical Data</h3>
+            <p>
+              Used wearable IMU sensors to capture hand movements during welding tasks and trained ML/DL models
+              to predict welding quality parameters, proposing a novel method for grading welders from beginner
+              to expert. Received the <strong>Best Paper Award</strong> at MERCon 2024.
+            </p>
+            <p class="card-links">
+              <a href="https://doi.org/10.1109/MERCon63886.2024.10689188" target="_blank" rel="noopener">MERCon 2024</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Human Joint Angle Estimation with EKF and PCA</h3>
+            <p>
+              Combined an Extended Kalman Filter with Principal Component Analysis to estimate human joint
+              angles from a wireless wearable IMU device, validated against YOLOv7-based vision estimates.
+              Presented at IEEE APSCON 2025.
+            </p>
+            <p class="card-links">
+              <a href="#publications">IEEE APSCON 2025</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Hand Gesture Recognition &amp; Gait Analysis (Undergraduate Thesis)</h3>
+            <p>
+              Undergraduate thesis on hand gesture recognition and gait analysis via wearable devices, advised by
+              Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, and Prof. Vijitha Herath. Ranked among the top 5
+              undergraduate electrical engineering projects island-wide and won the Gold Award at Techno Sri Lanka 2023.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section" id="publications">
+      <div class="container">
+        <h2>Publications</h2>
+        <p class="section-note">&dagger; denotes equal contribution</p>
+
+        <h3 class="pub-group">Journal Articles</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">Performance Benchmarking of Psychomotor Skills Using Wearable Devices: An Application in Sport</span><br />
+            Mahela Pandukabhaya&dagger;, <strong>Tharaka Fonseka</strong>&dagger;, Madhumini Kulathunge, Roshan Godaliyadda, Parakrama Ekanayake, Chanaka Senanayake, Vijitha Herath<br />
+            <span class="pub-venue">IEEE Access, vol. 13, pp. 25432–25445, 2025</span><br />
+            <span class="pub-links"><a href="https://doi.org/10.1109/ACCESS.2025.3536837" target="_blank" rel="noopener">DOI</a> · <a href="https://arxiv.org/abs/2411.16168" target="_blank" rel="noopener">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">The Influence of Social Interactions in Mitigating Psychological Distress During the COVID-19 Pandemic: A Study in Sri Lanka</span><br />
+            <strong>Tharaka Fonseka</strong>&dagger;, Isuru Thilakasiri&dagger;, Isuri Yapa, Roshan Godaliyadda, Vijitha Herath, Ramila Thowfeek, Anuruddika Rathnayake, Parakrama Ekanayake, Janaka Ekanayake<br />
+            <span class="pub-venue">Frontiers in Psychology — Personality and Social Psychology, 2024</span><br />
+            <span class="pub-links"><a href="https://doi.org/10.3389/fpsyg.2024.1491805" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+        </ol>
+
+        <h3 class="pub-group">Conference Papers</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">Estimation of Angle of Significance in Human Joint Angles Using Extended Kalman Filter and Principal Component Analysis</span><br />
+            Mahela Pandukabhaya, Madhumini Kulathunge, <strong>Tharaka Fonseka</strong>, Roshan Godaliyadda, Parakrama Ekanayake, Vijitha Herath<br />
+            <span class="pub-venue">IEEE Applied Sensing Conference (APSCON), Hyderabad, India, 2025</span>
+          </li>
+          <li>
+            <span class="pub-title">Quality Assessment of Welding Using Regression Analysis of Biomechanical Data</span>
+            <span class="badge">Best Paper Award</span><br />
+            Mahela Pandukabhaya, <strong>Tharaka Fonseka</strong>, Madhumini Kulathunge, Roshan Godaliyadda, Parakrama Ekanayake, Chanaka Senanayake, Pramila Gamage, Vijitha Herath<br />
+            <span class="pub-venue">Moratuwa Engineering Research Conference (MERCon), Sri Lanka, 2024</span><br />
+            <span class="pub-links"><a href="https://doi.org/10.1109/MERCon63886.2024.10689188" target="_blank" rel="noopener">DOI</a></span>
+          </li>
+        </ol>
+
+        <h3 class="pub-group">Preprints</h3>
+        <ol class="pub-list">
+          <li>
+            <span class="pub-title">Devising PoPStat: A Metric Bridging Population Pyramids with Global Disease Mortality</span><br />
+            <strong>Tharaka Fonseka</strong>, Buddhi Wijenayake, Athulya Ratnayake, Inosha Alwis, Supun Manathunga, Roshan Godaliyadda, Vijitha Herath, Isuru Pamuditha, Parakrama Ekanayake, Samath Dharmarathne<br />
+            <span class="pub-venue">arXiv:2501.11514, 2025</span><br />
+            <span class="pub-links"><a href="https://arxiv.org/abs/2501.11514" target="_blank" rel="noopener">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">PoPStat–COVID19: Leveraging Population Pyramids to Quantify Demographic Vulnerability to COVID-19</span><br />
+            Buddhi Wijenayake, Athulya Ratnayake, Lelumi Edirisinghe, Uditha Wijeratne, <strong>Tharaka Fonseka</strong>, Roshan Godaliyadda, Samath Dharmaratne, Parakrama Ekanayake, Vijitha Herath, Inosha Alwis, Supun Manathunga<br />
+            <span class="pub-venue">arXiv:2509.14213, 2025</span><br />
+            <span class="pub-links"><a href="https://arxiv.org/abs/2509.14213" target="_blank" rel="noopener">arXiv</a></span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-when">2024 – Aug 2025</div>
+            <div class="timeline-body">
+              <h3>Research Assistant</h3>
+              <p class="timeline-where">Multidisciplinary AI Research Centre (MARC), University of Peradeniya</p>
+              <p>
+                Researched AI applications in education, pandemic analysis, and biomedical wearables under
+                Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, and Prof. Vijitha Herath, in collaboration
+                with the Faculties of Arts and Medicine. Developed baseline surveys, led data collection and
+                analysis with AI analytics pipelines, and helped organize workshops and awareness sessions.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">Jan – Mar 2024</div>
+            <div class="timeline-body">
+              <h3>Teaching Assistant / Temporary Instructor</h3>
+              <p class="timeline-where">Department of Manufacturing and Industrial Engineering, University of Peradeniya</p>
+              <p>
+                Conducted laboratory classes on end-to-end PCB manufacturing and facilitated tutorial sessions
+                for undergraduate students.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">Jan – May 2022</div>
+            <div class="timeline-body">
+              <h3>Trainee Telecommunications Engineer</h3>
+              <p class="timeline-where">Huawei Technologies Lanka Co. (Pvt) Ltd</p>
+              <p>
+                Internship in the Huawei–Airtel managed-services project, working on Datacom, transmission,
+                and BTS site operations.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">Sep 2017 – Aug 2018</div>
+            <div class="timeline-body">
+              <h3>Mathematics Instructor</h3>
+              <p class="timeline-where">Sasip Higher Education Institute, Nugegoda</p>
+              <p>
+                Supported students preparing for Combined Mathematics in the G.C.E. Advanced Level examination.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-when">2025 – Present</div>
+            <div class="timeline-body">
+              <h3>PhD in Electrical and Computer Engineering</h3>
+              <p class="timeline-where">Princeton University, USA</p>
+              <p>Member of the JHA Lab, advised by Prof. Niraj K. Jha (since January 2026).</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">2018 – 2023</div>
+            <div class="timeline-body">
+              <h3>BSc Engineering (Hons) in Electrical and Electronic Engineering</h3>
+              <p class="timeline-where">University of Peradeniya, Sri Lanka</p>
+              <p>
+                First Class Honors · <strong>GPA 4.0/4.0</strong> · Batch topper (Rank 1 in the Faculty of
+                Engineering) · Rank 1 in the Department of Electrical and Electronic Engineering.<br />
+                Thesis: <em>Hand Gesture Recognition and Gait Analysis via Wearable Devices</em>.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">2004 – 2017</div>
+            <div class="timeline-body">
+              <h3>Primary &amp; Secondary Education</h3>
+              <p class="timeline-where">Ananda College, Colombo</p>
+              <p>G.C.E. Advanced Level in Physical Sciences (Combined Mathematics, Physics, Chemistry).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AWARDS ============ -->
+    <section class="section section-alt" id="awards">
+      <div class="container">
+        <h2>Awards &amp; Honors</h2>
+        <ul class="award-list">
+          <li><span class="award-year">2024</span> <strong>C.A. Hewavitharana Prize</strong> for Best Performance in Engineering — highest academic standing (batch top) in the Faculty of Engineering, University of Peradeniya, 85th General Convocation.</li>
+          <li><span class="award-year">2024</span> <strong>Ceylon Electricity Board Gold Medal</strong> for best all-round performance in Electrical and Electronic Engineering.</li>
+          <li><span class="award-year">2024</span> <strong>Ceylon Electricity Board Prize</strong> for Best Performance in Electrical and Electronic Engineering (field top).</li>
+          <li><span class="award-year">2024</span> <strong>W.M.G. Fernando Prize</strong> for best performance in Electronic Communications.</li>
+          <li><span class="award-year">2024</span> <strong>Best Paper Award</strong> at MERCon 2024 (Technology Management track) for <em>Quality Assessment of Welding Using Regression Analysis of Biomechanical Data</em>.</li>
+          <li><span class="award-year">2024</span> <strong>Merit Award</strong>, Eng. E.W. Karunarathne Award for Best Undergraduate Project in Electrical Engineering (top 5 island-wide) for <em>Hand Gesture Recognition and Gait Analysis via Wearable Devices</em>.</li>
+          <li><span class="award-year">2023</span> <strong>Gold Award</strong> — Best Display of Engineering Projects, Techno Sri Lanka Awards, Institute of Engineers Sri Lanka (IESL).</li>
+          <li><span class="award-year">2019</span> <strong>First Place</strong> — Walking Robot design and build category, Innovators 2019, University of Peradeniya.</li>
+          <li><span class="award-year">2018</span> <strong>Mahapola Merit Scholarship</strong> awarded by the Government of Sri Lanka for excellent G.C.E. (A/L) performance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ VOLUNTEERING ============ -->
+    <section class="section" id="volunteering">
+      <div class="container">
+        <h2>Service &amp; Volunteering</h2>
+        <div class="card-grid two-col">
+          <article class="card">
+            <h3>Outreach &amp; Teaching</h3>
+            <ul class="plain-list">
+              <li>Co-conducted <em>A Journey into AI</em> and <em>Frontiers in AI</em> workshops, introducing AI concepts to over 1,000 school students and teachers in Colombo and Kandy.</li>
+              <li>Volunteer instructor in Project <em>ARUNELLA</em>, teaching mathematics and science to underprivileged students across Sri Lanka.</li>
+              <li>Conducted a hands-on PCB manufacturing workshop for first-year undergraduates.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Leadership &amp; Community</h3>
+            <ul class="plain-list">
+              <li>Treasurer, IEEE Communications Society Student Branch Chapter, University of Peradeniya (2022/23).</li>
+              <li>Academic Sub-Warden, Akbar Hall of Residence, University of Peradeniya (2023/24).</li>
+              <li>Editorial team member, IEEE Robotics and Automation Society Student Branch Chapter (2021/22).</li>
+              <li>Organizing volunteer for iPURSE 2024, ICIIS 2023, EERaPS 2023, and the MARC inauguration exhibition.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container contact-inner">
+        <h2>Get in Touch</h2>
+        <p>The best way to reach me is via email.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:tharaka@princeton.edu">tharaka@princeton.edu</a>
+        <div class="contact-links">
+          <!-- TODO: replace # with your real profile URLs -->
+          <a href="#" title="Google Scholar">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/tharaka-d-fonseka-400918213" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" title="GitHub">GitHub</a>
+          <a href="assets/cv.pdf" title="Curriculum Vitae">CV</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Tharaka D. Fonseka &middot; Princeton, NJ</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
