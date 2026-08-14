@@ -69,10 +69,11 @@ a:hover { text-decoration: underline; }
 .nav-name {
   font-family: var(--font-head);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 0.92rem;
   line-height: 1.35;
   color: var(--ink);
   padding-left: 12px;
+  white-space: nowrap;
 }
 .nav-name:hover { text-decoration: none; color: var(--accent-dark); }
 
