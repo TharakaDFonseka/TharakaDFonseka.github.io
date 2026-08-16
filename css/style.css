@@ -145,7 +145,7 @@ main,
   margin-bottom: 22px;
 }
 
-.hero-bio { color: var(--ink-soft); margin-bottom: 14px; max-width: 62ch; }
+.hero-bio { color: var(--ink-soft); margin-bottom: 14px; max-width: 62ch; font-size: 0.94rem; }
 .hero-bio strong { color: var(--ink); }
 
 .hero-list { margin: -4px 0 14px; max-width: 62ch; }

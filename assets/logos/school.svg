@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Generic schoolhouse icon -->
-  <rect x="9" y="30" width="46" height="26" rx="2" fill="#e8f1fb" stroke="#1565c0" stroke-width="3"/>
-  <path d="M5 32 L32 11 L59 32" fill="none" stroke="#1565c0" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="26" y="40" width="12" height="16" rx="1.5" fill="#1565c0"/>
-  <rect x="14" y="38" width="8" height="8" rx="1" fill="#1565c0" opacity="0.55"/>
-  <rect x="42" y="38" width="8" height="8" rx="1" fill="#1565c0" opacity="0.55"/>
-  <circle cx="32" cy="27" r="3.5" fill="#1565c0"/>
-</svg>
