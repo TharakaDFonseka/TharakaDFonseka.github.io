@@ -255,6 +255,16 @@ main,
 .news-list a { text-decoration: underline; }
 .news-list a.no-underline { text-decoration: none; }
 
+.flag-us {
+  display: inline-block;
+  width: 1.15em;
+  height: 0.61em;
+  vertical-align: 0.08em;
+  margin: 0 0.12em;
+  border-radius: 1px;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.18);
+}
+
 /* ---------- Cards ---------- */
 
 .card-grid {
